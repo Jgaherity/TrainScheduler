@@ -19,7 +19,28 @@ $(document).ready(function(){
 
     //when clicking submit: 
     $('.submit').on('click', function(e) {
-        console.log("test submit");
+        //console.log("test submit");
+
+        var trainName = $("#trainNameInput").val().trim();
+        var trainDestination = $("#destinationInput").val().trim();
+        var trainTime = $("#trainTimeInput").val().trim();
+        var trainFrequency = $("#frequencyInput").val().trim();
+
+        console.log(trainName);
+        console.log(trainDestination);
+        console.log(trainTime);
+        console.log(trainFrequency);
+
+
+        //push to firebase 
+        dataRef.ref().child('trains').push({
+            // trainName: trainName,
+            // trainDestination: trainDestination,
+            // trainTime: trainTime,
+            // trainFrequency: trainFrequency,
+        });
+  
+        //need to post to table as well. 
 
 
     });
