@@ -1,0 +1,103 @@
+body {
+    background-color: rgb(169, 184, 193);
+    font-family: "Open Sans";
+}
+
+.wrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    width: 70%;
+    height: 70%;
+    border-radius: 2px;
+    box-shadow: 2px 2px 14px -3px rgba(0,0,0,0.75);
+    padding: 40px;
+}
+
+.topBar{
+    display: flex;
+    height: 60px;
+}
+
+tr{
+    text-align: -webkit-match-parent;
+}
+
+table{
+    width: 100%;
+}
+
+.title{
+    left: 360px;
+    position: absolute;
+    font-size: 30px;
+    line-height: 27px;
+    font-weight: 600;
+    color: #4f4f4f;
+}
+
+.ctas{
+    position: absolute;
+    display:flex;
+}
+
+.ctas >div{
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    padding: 5px 10px;
+    color: white;
+    margin: 0 2px;
+    cursor: pointer;
+}
+
+
+.ctas >div#one {
+    background-color: rgb(200, 217, 198);
+}
+
+.ctas >div#two {
+    background-color: rgb(237, 219, 194);
+}
+
+.ctas >div#three {
+    background-color: rgb(204, 204, 199);
+}
+
+.container{
+    border-top: 1px solid #eaeaea;
+    margin: 30px 0px;
+}
+
+.textFields{
+    /*display: flex;*/
+}
+
+input{
+    margin: 10px 0;
+}
+
+.section{
+    margin: 0 10px;
+}
+
+.section p{
+    font-size:14px;
+    margin:0;
+}
+
+.table{
+    display:flex;
+}
+
+.submit{
+    background-color: rgb(169, 184, 193);
+    color: white;
+    width: fit-content;
+    height: auto;
+    border-radius: 5px;
+    padding: 4px 10px;
+    border: 1px solid #aeaeae;
+}

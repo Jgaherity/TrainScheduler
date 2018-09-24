@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Schedule</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.5.0/firebase.js"></script>
+    <script src="assets/script/main.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="topBar">
+            <div class="ctas">
+                <div id="one">something</div>
+                <div id="two">something</div>
+                <div id="three">something</div>
+            </div>
+            <div class="title">Boston MBTA - The T</div>
+            <div class="timer"></div>
+        </div>
+        
+        <div class="content">
+            <div class="table">
+                <table>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th> 
+                        <th>Frequency</th>
+                        <th>Next Run</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                    <tr>
+                        <td id="trainName">Train</td>
+                        <td id="destination">Boston</td> 
+                        <td id="frequency">30 min</td>
+                        <td id="nextRun">20 min</td>
+                        <td id="minAway">10 min</td>
+                    </tr>
+                    <tr>
+                        <td>Train</td>
+                        <td>Boston</td>
+                        <td>30 min</td>
+                        <td>20 min</td>
+                        <td>10 min</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div class="container">
+            <h3>Add train</h3>
+            <div class="textFields">
+            
+                <div class="section">
+                    <p>Train Name</p>
+                    <input type="text" id="trainNameInput"/>
+                </div>
+                <div class="section">
+                    <p>Destination</p>
+                    <input type="text" id="destinationInput"/>
+                </div>
+                <div class="section">
+                    <p>First train time (HH:mm military time)</p>
+                    <input type="text" id="trainTimeInput"/>
+                </div>
+                <div class="section">
+                    <p>Frequency (min)</p>
+                    <input type="text" id="frequencyInput"/>
+                </div>
+                <div class="section">
+                    <div class="submit">Submit</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
